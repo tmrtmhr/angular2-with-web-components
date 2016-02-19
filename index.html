@@ -1,0 +1,33 @@
+  <head>
+    <title>Angular 2 QuickStart</title>
+
+    <link rel="import" href="bower_components/google-map/google-map.html">
+    
+    <!-- 1. Load libraries -->
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="webcomponent.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script>
+      System.config({
+        packages: {        
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('app/boot')
+            .then(null, console.error.bind(console));
+    </script>
+  </head>
+
+  <!-- 3. Display the application -->
+  <body>
+    <root></root>
+  </body>
+
+</html>
