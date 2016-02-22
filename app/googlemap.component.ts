@@ -12,6 +12,6 @@ export class GoogleMapWebComponent {
     }
 
     printLatLng() {
-        console.log(this.elem.latitude, this.elem.longitude);
+        console.log('[DOM Property] Lat: ', this.elem.latitude, ' Lng: ', this.elem.longitude);
     }
 }

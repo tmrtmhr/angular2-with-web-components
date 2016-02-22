@@ -21,15 +21,15 @@ export class AppComponent {
 
     constructor() {
         this.lat = 35.71;
-        this.lng = -220.02;
+        this.lng = 139.98;
     }
 
     goWest() {
         this.lng = this.lng - 0.1; // Angular 側のプロパティ更新が Web Components に反映される
-        this.googlemap.elem.resize();
     }
 
     print() {
+        console.log('[Angular2 Component Property] Lat: ', this.lat, ' Lng: ', this.lng);
         this.googlemap.printLatLng(); // 子コンポーネントのメソッド呼び出し
     }
 }
