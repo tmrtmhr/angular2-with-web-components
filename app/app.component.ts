@@ -24,6 +24,10 @@ export class AppComponent {
         this.lng = 139.98;
     }
 
+    ngAfterViewInit() {
+        // この時点で ViewChild にアクセスできるようになる
+    }
+
     goWest() {
         this.lng = this.lng - 0.1; // Angular 側のプロパティ更新が Web Components に反映される
     }
