@@ -18,6 +18,8 @@ import {GoogleMapWebComponent} from './googlemap.component'
 export class AppComponent {
     @ViewChild(GoogleMapWebComponent)
     googlemap: GoogleMapWebComponent;
+    lat: number;
+    lng: number;
 
     constructor() {
         this.lat = 35.71;
